@@ -8,34 +8,19 @@
 </head>
 <body>
     <div class="game-container">
-        <!-- Contenedor para el bloque de diamante, el cerdo y el zombie -->
         <div class="scene">
-            <!-- Bloque de diamante al lado izquierdo -->
             <div class="diamond-block" onclick="toggleDiamond(this)">
                 <img id="diamond" src="bloque_diamante.webp" alt="Bloque de Diamante">
             </div>
-
-            <!-- Cerdo al lado derecho del diamante -->
             <div class="pig" onclick="togglePig(this)">
                 <img id="pig" src="cerdo.webp" alt="Cerdo">
             </div>
-
-            <!-- Zombie cerca del pasto -->
             <div class="zombie" onclick="toggleZombie(this)">
                 <img id="zombie" src="zombie.webp" alt="Zombie">
             </div>
         </div>
     </div>
-    
-    <!-- Suelo de bloques de pasto al fondo -->
-    <div class="ground">
-        <img class="ground-block" src="grass.jpg" alt="Bloque de Pasto" onclick="toggleGrass(this)">
-        <img class="ground-block" src="grass.jpg" alt="Bloque de Pasto" onclick="toggleGrass(this)">
-        <img class="ground-block" src="grass.jpg" alt="Bloque de Pasto" onclick="toggleGrass(this)">
-        <img class="ground-block" src="grass.jpg" alt="Bloque de Pasto" onclick="toggleGrass(this)">
-        <img class="ground-block" src="grass.jpg" alt="Bloque de Pasto" onclick="toggleGrass(this)">
-    </div>
-
+    <div class="ground" id="ground"></div>
     <script src="index.js"></script>
 </body>
 </html>
