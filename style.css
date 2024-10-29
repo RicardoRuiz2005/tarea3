@@ -1,11 +1,11 @@
 body {
     display: flex;
     justify-content: center;
-    align-items: center; /* Cambia la alineación vertical al centro */
+    align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: #87CEEB; /* Fondo azul cielo */
-    background-image: url('nubes.jpg'); /* Fondo de nubes repetido */
+    background-color: #87CEEB;
+    background-image: url('nubes.jpg');
     background-repeat: repeat-x;
     background-position: top;
 }
@@ -21,14 +21,17 @@ body {
 
 .scene {
     display: flex;
-    justify-content: center; /* Centra los elementos en la fila */
-    align-items: flex-end; /* Alinea los elementos al fondo de la fila */
-    gap: 40px; /* Espacio entre el bloque de diamante, cerdo y zombie */
-    margin-bottom: 20px; /* Ajuste para elevar los elementos sobre el suelo */
+    justify-content: center;
+    align-items: center;
+    gap: 80px; /* Aumento de separación entre los elementos */
+    margin-bottom: 20px;
 }
 
 .diamond-block, .pig, .zombie {
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .ground {
@@ -37,26 +40,25 @@ body {
     left: 0;
     width: 100%;
     display: flex;
-    justify-content: center;
 }
 
 .ground-block {
-    width: 150px; /* Tamaño mayor para los bloques de pasto */
-    height: 150px;
+    flex: 1 0 auto;
+    height: 100px;
     cursor: pointer;
 }
 
 #diamond {
-    width: 80px; /* Diamante más pequeño */
-    height: 80px;
+    width: 100px;
+    height: 100px;
 }
 
 #pig {
-    width: 120px; /* Cerdo de tamaño mediano */
-    height: 120px;
+    width: 130px;
+    height: 130px;
 }
 
 #zombie {
-    width: 180px; /* Zombie más grande */
-    height: 180px;
+    width: 150px;
+    height: 150px;
 }
